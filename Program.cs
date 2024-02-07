@@ -20,17 +20,35 @@ namespace StringManupulation
 
             // calcute length of the string
 
-            Console.WriteLine("Please enter any string");
+            //Console.WriteLine("Please enter any string");
 
-            string Str=Console.ReadLine();
+            //string Str=Console.ReadLine();
 
-             int Counter = 0;
+            // int Counter = 0;
 
-            foreach (var item in Str)
+            //foreach (var item in Str)
+            //{
+            //    Counter++;
+            //}
+            //Console.WriteLine("leanth of the string is =" + Counter);
+
+            Console.WriteLine("pleaswe enter any sentance");
+            string str=Console.ReadLine();
+
+            int SpaceCouter = 0;
+
+            foreach (var item in str)
             {
-                Counter++;
+                if (item == ' ' ) 
+                {
+                    SpaceCouter++;
+
+                }
+
             }
-            Console.WriteLine("leanth of the string is =" + Counter);
+            Console.WriteLine(" Total space count is =" + SpaceCouter);
+
+
 
         }
 

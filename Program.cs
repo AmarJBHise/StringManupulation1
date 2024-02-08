@@ -32,23 +32,40 @@ namespace StringManupulation
             //}
             //Console.WriteLine("leanth of the string is =" + Counter);
 
-            Console.WriteLine("pleaswe enter any sentance");
-            string str=Console.ReadLine();
+            //Console.WriteLine("pleaswe enter any sentance");
+            //string str=Console.ReadLine();
 
-            int SpaceCouter = 0;
+            //int SpaceCouter = 0;
 
-            foreach (var item in str)
+            //foreach (var item in str)
+            //{
+            //    if (item == ' ' ) 
+            //    {
+            //        SpaceCouter++;
+
+            //    }
+
+            //}
+            //Console.WriteLine(" Total space count is =" + SpaceCouter);
+
+            Console.WriteLine("please enter ant string");
+            string Str = Console.ReadLine();
+
+            int VowelesCounter = 0;
+
+            foreach (var item in Str)
             {
-                if (item == ' ' ) 
+                if (item == 'a'|| item == 'e' || item == 'i' || item == '0' || item == 'u'||
+                    item == 'A' || item == 'E' || item == 'I' || item == 'O' || item == 'U')
                 {
-                    SpaceCouter++;
+                    VowelesCounter++;
 
                 }
 
             }
-            Console.WriteLine(" Total space count is =" + SpaceCouter);
 
-
+            Console.WriteLine("total vowelescounter="+ VowelesCounter);
+           
 
         }
 
